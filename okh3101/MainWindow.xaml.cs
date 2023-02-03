@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+
 
 namespace okh3101
 {
@@ -24,7 +26,13 @@ namespace okh3101
         {
             InitializeComponent();
             MainFrame.Navigate(new HotelsPage());
-            Managerclass.MainFrame;
+            _ = Managerclass.MainFrame;
+            ImportTours();
+        }
+
+        private void ImportTours()
+        {
+            var fileData = File.ReadAllLine
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

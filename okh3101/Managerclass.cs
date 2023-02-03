@@ -10,4 +10,17 @@ namespace okh3101
     {
         public static Frame MainFrame { get; set; }
     }
+
+    public class Frame
+    {
+        internal void Navigate(AddEditPage addEditPage)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void GoBack()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
